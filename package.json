@@ -1,13 +1,12 @@
 {
-  "name": "@zazuko/build-your-vocabularies",
+  "name": "@hydrofoil/vocabularies",
   "version": "0.0.0",
-  "private": true,
   "description": "Access your vocabularies as datasets or n-quads",
   "main": "index.js",
   "module": "index.mjs",
   "browser": "index.mjs",
   "bin": {
-    "my-vocab": "bin/vocab.js"
+    "happ-vocab": "bin/vocab.js"
   },
   "exports": {
     ".": {
@@ -52,26 +51,29 @@
   ],
   "scripts": {
     "prefetch": "mkdirp ontologies",
-    "fetch": "ts-node build/fetch.ts --indexBase https://prefix.example.com/",
+    "fetch": "ts-node build/fetch.ts --indexBase https://prefix.hypermedia.app/",
     "lint": "eslint . --ext .js,.ts --ignore-path .gitignore --quiet",
     "pretest": "npm run lint",
     "prepare:modules": "mkdirp src/datasets; ts-node build/modules",
     "prepare:builders": "rdf-ns-builders generate -p ./src -o src/builders",
-    "prepare": "run-p prepare:*",
+    "prebuild": "run-p prepare:*",
     "build:node": "tsc",
     "build:modern": "babel src --out-dir . --extensions .ts --out-file-extension .mjs --ignore *.test.js --ignore src/loadDataset/index.ts",
     "build": "run-p build:*",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "release": "changeset publish"
   },
-  "author": "Zazuko GmbH",
+  "author": "Tomasz Pluskiewicz <awesome@hypermedia.app>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zazuko/build-your-vocabularies/issues"
+    "url": "https://github.com/hypermedia-app/shaperone/issues"
   },
+  "repository": "https://github.com/hypermedia-app/shaperone",
   "devDependencies": {
     "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.3",
     "@babel/preset-typescript": "^7.13.0",
+    "@changesets/cli": "^2.16.0",
     "@rdfjs/fetch-lite": "^2.1.0",
     "@rdfjs/formats-common": "^2.1.0",
     "@rdfjs/serializer-rdfjs": "^0.0.4",
