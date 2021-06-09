@@ -1,5 +1,5 @@
 <https://hypermedia.app/events#EventHandler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/events#> .
-<https://hypermedia.app/events#EventHandler> <http://www.w3.org/2000/01/rdf-schema#comment> "Class of event handlers which, run when specific Activity Stream events occurr in the system" <https://hypermedia.app/events#> .
+<https://hypermedia.app/events#EventHandler> <http://www.w3.org/2000/01/rdf-schema#comment> "Class of event handlers which, run when specific Activity Stream events occur in the system" <https://hypermedia.app/events#> .
 <https://hypermedia.app/events#eventSpec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/events#> .
 <https://hypermedia.app/events#eventSpec> <http://www.w3.org/2000/01/rdf-schema#comment> "Object of this property is a predicate-object pair, defining what events a handler applies to" <https://hypermedia.app/events#> .
 <https://hypermedia.app/events#eventSpec> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hypermedia.app/events#EventHandler> <https://hypermedia.app/events#> .
