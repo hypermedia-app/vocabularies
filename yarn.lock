@@ -632,12 +632,13 @@
   dependencies:
     "@types/node" "*"
 
-"@tpluscode/rdf-ns-builders@^0.4.5":
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/@tpluscode/rdf-ns-builders/-/rdf-ns-builders-0.4.5.tgz#e6ecf232f263d0c23198db60478fb27e4de3ff25"
-  integrity sha512-bohwIUdO+dlxsVxyIoB26K40D14uhCfs0tK+eGSlxwj6xNjQVNWliTybfgkDfXPwaY1xV+igjHO04ajxK3hTmw==
+"@tpluscode/rdf-ns-builders@^1":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tpluscode/rdf-ns-builders/-/rdf-ns-builders-1.0.0.tgz#289391759c6d5a6af816d66ea68cc355a6e18a9b"
+  integrity sha512-e7EjBOgKbS7RoSu8SPuD8L/JtADO9tiOODGwg2DykbOEAZ29XzmlexnnJuhBJxHZ4/MY/Fr/ZrkgCr0YNEND6w==
   dependencies:
     "@rdf-esm/namespace" "^0.5.1"
+    "@rdfjs/types" "*"
     commander "^7.2.0"
     fs-extra "^10.0.0"
 

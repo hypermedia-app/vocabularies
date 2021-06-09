@@ -4,7 +4,7 @@ prefix hyper-events: <https://hypermedia.app/events#>
 
 hyper-events:EventHandler
   a rdfs:Class ;
-  rdfs:comment "Class of event handlers which, run when specific Activity Stream events occurr in the system" ;
+  rdfs:comment "Class of event handlers which, run when specific Activity Stream events occur in the system" ;
 .
 
 hyper-events:eventSpec

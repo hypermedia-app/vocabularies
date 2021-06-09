@@ -1,0 +1,4 @@
+<https://hypermedia.app/auth#access> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/auth#> .
+<https://hypermedia.app/auth#access> <http://www.w3.org/2000/01/rdf-schema#comment> "Overrides the ACL access mode to require when executing an operation.\nThis is especially useful for POST operations, which can be either writing or reading." <https://hypermedia.app/auth#> .
+<https://hypermedia.app/auth#access> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/hydra/core#Operation> <https://hypermedia.app/auth#> .
+<https://hypermedia.app/auth#access> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/auth/acl#Access> <https://hypermedia.app/auth#> .
