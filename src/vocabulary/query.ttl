@@ -1,0 +1,13 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix code: <https://code.described.at/>
+PREFIX hydra: <http://www.w3.org/ns/hydra/core#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix hyper-query: <https://hypermedia.app/query#>
+
+hyper-query:filter
+  a rdf:Property ;
+  schema:domainIncludes hydra:IriTemplateMapping ;
+  schema:rangeIncludes code:EcmaScript ;
+  rdfs:comment "Links to code which will be used to filter a hydra:Collection for example" ;
+.

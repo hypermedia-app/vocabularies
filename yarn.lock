@@ -531,10 +531,10 @@
   dependencies:
     "@types/rdf-js" "*"
 
-"@rdfjs/fetch-lite@^2.1.0":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@rdfjs/fetch-lite/-/fetch-lite-2.1.1.tgz#0855e4dd490640241b368ef6e94412a033d414e0"
-  integrity sha512-4+HROQMjpl+zyrjDSJDjSf2Xmj0ExSA/4Jyyb3WLkPrnR53l0WWD+d8lUtzkywwGsHKQuRGyxKgt2VoYIYaXNw==
+"@rdfjs/fetch-lite@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@rdfjs/fetch-lite/-/fetch-lite-2.1.0.tgz#36205713cdd72304b1eda91de1e7d147fad3a3f7"
+  integrity sha512-7P2+QBjSJ/oeN2CRySIrG0IHat7UDqf7KfpZ9IP/MhWN3AneTpuURlOVAKcP/tedsSdlf2ihnzO38C6uAd7ppQ==
   dependencies:
     isstream "^0.1.2"
     nodeify-fetch "^2.2.1"
@@ -661,6 +661,13 @@
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
+"@types/file-fetch@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@types/file-fetch/-/file-fetch-1.6.0.tgz#0abdacb7a600be768024120353b4dbb0e693db2d"
+  integrity sha512-HWkXjwxl1kLMG4KLGfNm52QO+jD77KcRcmn1So5t9SwwiPWfuK11J/uZXHrrCzzYuZ59Ot60RM9ka4z2Nb7CUA==
+  dependencies:
+    "@types/node-fetch" "*"
+
 "@types/json-schema@^7.0.3":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
@@ -676,7 +683,7 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.1.tgz#283f669ff76d7b8260df8ab7a4262cc83d988256"
   integrity sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
 
-"@types/node-fetch@^2.5.10":
+"@types/node-fetch@*", "@types/node-fetch@^2.5.10":
   version "2.5.10"
   resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.5.10.tgz#9b4d4a0425562f9fcea70b12cb3fcdd946ca8132"
   integrity sha512-IpkX0AasN44hgEad0gEF/V6EgR5n69VEqPEgnmoM8GsIGro3PowbWs4tR6IhxUTyPLpOn+fiGG6nrQhcmoCuIQ==
@@ -698,6 +705,11 @@
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
+
+"@types/proto-fetch@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/proto-fetch/-/proto-fetch-1.0.0.tgz#cc49d0d2de409c75eaf76821f9e82d4750905cc1"
+  integrity sha512-MNQqHFzqgQWbOCB9uVMgj0lUHwF6GZTUncAjMxRufD0yzGx+zuZLN/fOGZgYudb+9FkUT8gxQdXTu1wHR6HyGA==
 
 "@types/rdf-dataset-indexed@*", "@types/rdf-dataset-indexed@^0.4.6":
   version "0.4.6"

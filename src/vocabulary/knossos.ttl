@@ -1,0 +1,28 @@
+PREFIX hydra: <http://www.w3.org/ns/hydra/core#>
+prefix code: <https://code.described.at/>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix knossos: <https://hypermedia.app/knossos#>
+
+knossos:beforeSave
+  a rdf:Property ;
+  rdfs:range rdfs:Class ;
+  schema:rangeIncludes code:EcmaScript ;
+  rdfs:comment "Links to code which will be executed when an instance of given class is saved" ;
+.
+
+knossos:createWithPUT
+  a rdf:Property ;
+  rdfs:domain rdfs:Class ;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Set to true to allow new resources of given class being created using PUT requests." ;
+.
+
+knossos:memberTemplate
+  a rdf:Property ;
+  rdfs:domain rdfs:Class ;
+  rdfs:range hydra:IriTemplate ;
+  rdfs:comment "Defines an identifier template for newly created instances of given class. Used by knossos' default collection POST handler." ;
+.

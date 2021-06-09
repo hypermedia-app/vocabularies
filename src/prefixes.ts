@@ -1,5 +1,7 @@
 export default {
-  auth: 'https://hypermedia.app/auth#',
+  'hyper-auth': 'https://hypermedia.app/auth#',
+  'hyper-events': 'https://hypermedia.app/events#',
+  'hyper-query': 'https://hypermedia.app/query#',
   knossos: 'https://hypermedia.app/knossos#',
-  rs: 'https://hypermedia.app/roadshow#'
+  roadshow: 'https://hypermedia.app/roadshow#'
 }

@@ -1,0 +1,12 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix roadshow: <https://hypermedia.app/roadshow#>
+
+roadshow:dereference
+  a owl:ObjectProperty ;
+  rdfs:domain sh:PropertyShape ;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Indicates that the roadshow should dereference the object of a property to render its representation inline." .
