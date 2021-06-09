@@ -531,10 +531,10 @@
   dependencies:
     "@types/rdf-js" "*"
 
-"@rdfjs/fetch-lite@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@rdfjs/fetch-lite/-/fetch-lite-2.1.0.tgz#36205713cdd72304b1eda91de1e7d147fad3a3f7"
-  integrity sha512-7P2+QBjSJ/oeN2CRySIrG0IHat7UDqf7KfpZ9IP/MhWN3AneTpuURlOVAKcP/tedsSdlf2ihnzO38C6uAd7ppQ==
+"@rdfjs/fetch-lite@^2.1.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@rdfjs/fetch-lite/-/fetch-lite-2.1.1.tgz#0855e4dd490640241b368ef6e94412a033d414e0"
+  integrity sha512-4+HROQMjpl+zyrjDSJDjSf2Xmj0ExSA/4Jyyb3WLkPrnR53l0WWD+d8lUtzkywwGsHKQuRGyxKgt2VoYIYaXNw==
   dependencies:
     isstream "^0.1.2"
     nodeify-fetch "^2.2.1"
@@ -1973,10 +1973,10 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
-file-fetch@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/file-fetch/-/file-fetch-1.6.1.tgz#ea58bb7828da0268ddd5a1f5d2d568eb38a0015f"
-  integrity sha512-GP5MSbBwGDMUt950xFFd/0mJQTYQHkFmqxpOZEZDUAV9HstVkx7hBvwKK+19MjtYjr+bfOC2ZJBmw9/YEZNZFg==
+file-fetch@^1.7:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/file-fetch/-/file-fetch-1.7.0.tgz#7d5589b9827fe778d4dd107f6573a8a46701a4f5"
+  integrity sha512-7LoGU5lc0UweZZXcPHORucTT3UCvPUNPlT2KcV/vloztUpp1FCJ6qJasWq0OMGzMw+ekV7KEnndsYELsRImYrQ==
   dependencies:
     get-stream "^6.0.1"
     mime-types "^2.1.30"
