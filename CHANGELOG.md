@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.1.3
+
+### Patch Changes
+
+- 6356692: Missing terms now added for real
+
 ## 0.1.2
 
 ### Patch Changes
