@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.1.2
+
+### Patch Changes
+
+- 4807c07: Missing terms in `knossos#`, `events#` and `query#`
+
 ## 0.1.1
 
 ### Patch Changes
