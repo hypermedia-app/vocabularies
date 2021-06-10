@@ -1,3 +1,4 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX hydra: <http://www.w3.org/ns/hydra/core#>
 prefix code: <https://code.described.at/>
 PREFIX schema: <http://schema.org/>
@@ -24,5 +25,17 @@ knossos:memberTemplate
   a rdf:Property ;
   rdfs:domain rdfs:Class ;
   rdfs:range hydra:IriTemplate ;
-  rdfs:comment "Defines an identifier template for newly created instances of given class. Used by knossos' default collection POST handler." ;
+  rdfs:comment
+    "Defines an identifier template for newly created instances of given class. Used by knossos' default collection POST handler." ;
+.
+
+knossos:System
+  a knossos:SystemAccount ;
+  rdfs:label "System" ;
+  rdfs:comment "A special knossos account name which by default has full control over a knossos API"
+.
+
+knossos:SystemAccount
+  a rdfs:Class ;
+  rdfs:subClassOf foaf:Agent ;
 .

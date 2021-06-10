@@ -11,3 +11,39 @@ hyper-query:filter
   schema:rangeIncludes code:EcmaScript ;
   rdfs:comment "Links to code which will be used to filter a hydra:Collection for example" ;
 .
+
+hyper-query:templateMappings
+  a rdf:Property ;
+  rdfs:comment
+    "(Blank) resource which was used to expand hydra:IriTemplate, resulting in the current resource's identifier" ;
+.
+
+hyper-query:preprocess
+  a rdf:Property ;
+  rdfs:domain rdfs:Class ;
+  schema:rangeIncludes code:EcmaScript ;
+  rdfs:comment
+    "Links to code which will be executed before a resource representation is passed to a request handler"
+.
+
+hyper-query:order
+  a rdf:Property ;
+  rdfs:comment
+    "Declares how a given resource (typically collection) is ordered. Its object must be an RDF List of hyper-query:OrderSpecification" ;
+.
+
+hyper-query:OrderSpecification
+  a rdfs:Class ;
+.
+
+hyper-query:path
+  a rdf:Property ;
+  rdfs:domain hyper-query:OrderSpecification ;
+  rdfs:comment "A valid SHACL Path which should be used to sort a collection" ;
+.
+
+hyper-query:direction
+  a rdf:Property ;
+  rdfs:domain hyper-query:OrderSpecification ;
+  rdfs:comment "Sort direction (`ldp:Ascending` or `ldp:Descending`)" ;
+.
