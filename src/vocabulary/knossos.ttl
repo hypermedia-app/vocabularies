@@ -1,3 +1,4 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 prefix foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX hydra: <http://www.w3.org/ns/hydra/core#>
 prefix code: <https://code.described.at/>
@@ -38,4 +39,12 @@ knossos:System
 knossos:SystemAccount
   a rdfs:Class ;
   rdfs:subClassOf foaf:Agent ;
+.
+
+knossos:supportedByClass
+  a rdf:Property ;
+  owl:inverseOf hydra:supportedOperation ;
+  rdfs:domain hydra:Operation ;
+  rdfs:range hydra:Class ;
+  rdfs:comment "Allows creating supported operations with reverse relation with a hydra:Class"
 .

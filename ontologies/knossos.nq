@@ -15,3 +15,8 @@
 <https://hypermedia.app/knossos#memberTemplate> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines an identifier template for newly created instances of given class. Used by knossos' default collection POST handler." <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#memberTemplate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#memberTemplate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/hydra/core#IriTemplate> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#supportedByClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#supportedByClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Allows creating supported operations with reverse relation with a hydra:Class" <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#supportedByClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/hydra/core#Operation> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#supportedByClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/hydra/core#Class> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#supportedByClass> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/hydra/core#supportedOperation> <https://hypermedia.app/knossos#> .
