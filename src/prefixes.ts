@@ -1,4 +1,6 @@
 const prefixes = {
+  code: 'https://code.described.at/',
+  hydraBox: 'http://hydra-box.org/schema/',
   'hyper-auth': 'https://hypermedia.app/auth#',
   'hyper-events': 'https://hypermedia.app/events#',
   'hyper-query': 'https://hypermedia.app/query#',

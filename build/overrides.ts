@@ -12,6 +12,13 @@ export interface Override extends FileSpec {
 }
 
 export const overrides: Record<string, Override> = {
+  code: {
+    file: 'https://raw.githubusercontent.com/zazuko/code.described.at/master/vocab.nt',
+    mediaType: 'text/turtle'
+  },
+  hydraBox: {
+    file: 'file:src/vocabulary/hydraBox.ttl'
+  },
   'hyper-auth': {
     file: 'file:src/vocabulary/auth.ttl'
   },

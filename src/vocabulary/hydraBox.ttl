@@ -1,0 +1,11 @@
+PREFIX hydra: <http://www.w3.org/ns/hydra/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix hydra-box: <http://hydra-box.org/schema/>
+
+hydra-box:variables
+  a rdf:Property ;
+  rdfs:domain hydra:Operation ;
+  rdfs:range hydra:IriTemplate ;
+  rdfs:label "Route variable for hydra-box's IriTemplate express handler" ;
+.
