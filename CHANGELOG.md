@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.1.6
+
+### Patch Changes
+
+- 19d4ac5: New prefixes: `hydra-box` and `code`
+
 ## 0.1.5
 
 ### Patch Changes
