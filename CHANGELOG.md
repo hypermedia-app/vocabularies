@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.1.7
+
+### Patch Changes
+
+- 4a9057c: Added `knossos:transformVariable`
+
 ## 0.1.6
 
 ### Patch Changes
