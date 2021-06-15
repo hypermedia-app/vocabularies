@@ -20,3 +20,7 @@
 <https://hypermedia.app/knossos#supportedByClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/hydra/core#Operation> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#supportedByClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/hydra/core#Class> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#supportedByClass> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/hydra/core#supportedOperation> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#transformVariable> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScript> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#transformVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#transformVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Annotates a template mapping variable mapping which will be passed to a transformation function, for example to slugify a string value" <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#transformVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/hydra/core#IriTemplateMapping> <https://hypermedia.app/knossos#> .

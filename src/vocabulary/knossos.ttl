@@ -48,3 +48,10 @@ knossos:supportedByClass
   rdfs:range hydra:Class ;
   rdfs:comment "Allows creating supported operations with reverse relation with a hydra:Class"
 .
+
+knossos:transformVariable
+  a rdf:Property ;
+  rdfs:domain hydra:IriTemplateMapping ;
+  schema:rangeIncludes code:EcmaScript ;
+  rdfs:comment "Annotates a template mapping variable mapping which will be passed to a transformation function, for example to slugify a string value"
+.
