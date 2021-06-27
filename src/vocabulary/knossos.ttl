@@ -49,6 +49,15 @@ knossos:supportedByClass
   rdfs:comment "Allows creating supported operations with reverse relation with a hydra:Class"
 .
 
+knossos:supportedByProperty
+  a rdf:Property ;
+  owl:inverseOf hydra:supportedOperation ;
+  rdfs:domain hydra:Operation ;
+  rdfs:range hydra:Link ;
+  rdfs:label "Operation supported by a (link) property" ;
+  rdfs:comment "Allows creating supported operations with reverse relation with a hydra:Link"
+.
+
 knossos:transformVariable
   a rdf:Property ;
   rdfs:domain hydra:IriTemplateMapping ;
