@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.1.8
+
+### Patch Changes
+
+- f5f0ba6: Added `supportedByProperty` property
+
 ## 0.1.7
 
 ### Patch Changes
