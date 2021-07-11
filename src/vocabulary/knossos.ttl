@@ -42,20 +42,20 @@ knossos:SystemAccount
 .
 
 knossos:supportedByClass
-  a rdf:Property ;
-  owl:inverseOf hydra:supportedOperation ;
-  rdfs:domain hydra:Operation ;
-  rdfs:range hydra:Class ;
-  rdfs:comment "Allows creating supported operations with reverse relation with a hydra:Class"
+  owl:sameAs knossos:supportedBy ;
 .
 
 knossos:supportedByProperty
+  owl:sameAs knossos:supportedBy ;
+.
+
+knossos:supportedBy
   a rdf:Property ;
   owl:inverseOf hydra:supportedOperation ;
   rdfs:domain hydra:Operation ;
-  rdfs:range hydra:Link ;
-  rdfs:label "Operation supported by a (link) property" ;
-  rdfs:comment "Allows creating supported operations with reverse relation with a hydra:Link"
+  schema:rangeIncludes hydra:Class, hydra:Link ;
+  rdfs:label "Operation supported by" ;
+  rdfs:comment "Allows creating supported operations with reverse relation originating from the operation resource" ;
 .
 
 knossos:transformVariable
