@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.2.0
+
+### Minor Changes
+
+- 9d99ef2: Combine `supportedByClass` and `supportedByProperty` into a single property without ranges
+
 ## 0.1.8
 
 ### Patch Changes
