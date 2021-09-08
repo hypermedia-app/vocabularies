@@ -64,3 +64,10 @@ knossos:transformVariable
   schema:rangeIncludes code:EcmaScript ;
   rdfs:comment "Annotates a template mapping variable mapping which will be passed to a transformation function, for example to slugify a string value"
 .
+
+knossos:ownGraphOnly
+  a rdf:Property ;
+  rdfs:range xsd:boolean ;
+  rdfs:label "named graph" ;
+  rdfs:comment "Used with a hydra:memberAssertion, this property narrows down a static filter to member's named graph only" ;
+.
