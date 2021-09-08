@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.2.1
+
+### Patch Changes
+
+- e312242: Added `knossos:ownGraphOnly`
+
 ## 0.2.0
 
 ### Minor Changes
