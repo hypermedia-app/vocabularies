@@ -47,3 +47,8 @@ hyper-query:direction
   rdfs:domain hyper-query:OrderSpecification ;
   rdfs:comment "Sort direction (`ldp:Ascending` or `ldp:Descending`)" ;
 .
+
+hyper-query:include
+  a rdf:Property ;
+  rdfs:comment "Includes linked resources in API queries" ;
+.
