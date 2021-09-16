@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.2.2
+
+### Patch Changes
+
+- 8e1d8ce: Added `hyper-query:include`
+
 ## 0.2.1
 
 ### Patch Changes

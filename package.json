@@ -1,6 +1,6 @@
 {
   "name": "@hydrofoil/vocabularies",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Access your vocabularies as datasets or n-quads",
   "main": "index.js",
   "module": "index.mjs",
