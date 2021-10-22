@@ -71,3 +71,15 @@ knossos:ownGraphOnly
   rdfs:label "named graph" ;
   rdfs:comment "Used with a hydra:memberAssertion, this property narrows down a static filter to member's named graph only" ;
 .
+
+knossos:Configuration
+  a rdfs:Class ;
+  rdfs:label "Configuration resources for a knossos API" ;
+.
+
+knossos:middleware
+  a rdf:Property ;
+  rdfs:domain knossos:Configuration ;
+  rdfs:label "middleware" ;
+  rdfs:comment "Used to add express middleware to knossos API" ;
+.

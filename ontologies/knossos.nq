@@ -1,3 +1,5 @@
+<https://hypermedia.app/knossos#Configuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#Configuration> <http://www.w3.org/2000/01/rdf-schema#label> "Configuration resources for a knossos API" <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hypermedia.app/knossos#SystemAccount> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#System> <http://www.w3.org/2000/01/rdf-schema#comment> "A special knossos account name which by default has full control over a knossos API" <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#System> <http://www.w3.org/2000/01/rdf-schema#label> "System" <https://hypermedia.app/knossos#> .
@@ -15,6 +17,10 @@
 <https://hypermedia.app/knossos#memberTemplate> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines an identifier template for newly created instances of given class. Used by knossos' default collection POST handler." <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#memberTemplate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#memberTemplate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/hydra/core#IriTemplate> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#middleware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#middleware> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to add express middleware to knossos API" <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#middleware> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hypermedia.app/knossos#Configuration> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#middleware> <http://www.w3.org/2000/01/rdf-schema#label> "middleware" <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#ownGraphOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#ownGraphOnly> <http://www.w3.org/2000/01/rdf-schema#comment> "Used with a hydra:memberAssertion, this property narrows down a static filter to member's named graph only" <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#ownGraphOnly> <http://www.w3.org/2000/01/rdf-schema#label> "named graph" <https://hypermedia.app/knossos#> .
