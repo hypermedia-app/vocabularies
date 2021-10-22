@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.2.3
+
+### Patch Changes
+
+- 32f16a3: Added `knossos:Configuration` and `knossos:middlewre`
+
 ## 0.2.2
 
 ### Patch Changes
