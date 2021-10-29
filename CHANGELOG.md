@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.2.4
+
+### Patch Changes
+
+- d353e58: Add `knossos:authorizationRule`
+
 ## 0.2.3
 
 ### Patch Changes
