@@ -83,3 +83,10 @@ knossos:middleware
   rdfs:label "middleware" ;
   rdfs:comment "Used to add express middleware to knossos API" ;
 .
+
+knossos:authorizationRule
+  a rdf:Property ;
+  rdfs:domain knossos:Configuration ;
+  rdfs:label "authorizationRule" ;
+  rdfs:comment "Adds authorization rules to customize handling of ACLs" ;
+.
