@@ -13,9 +13,5 @@
 <https://hypermedia.app/query#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/query#> .
 <https://hypermedia.app/query#path> <http://www.w3.org/2000/01/rdf-schema#comment> "A valid SHACL Path which should be used to sort a collection" <https://hypermedia.app/query#> .
 <https://hypermedia.app/query#path> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hypermedia.app/query#OrderSpecification> <https://hypermedia.app/query#> .
-<https://hypermedia.app/query#preprocess> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScript> <https://hypermedia.app/query#> .
-<https://hypermedia.app/query#preprocess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/query#> .
-<https://hypermedia.app/query#preprocess> <http://www.w3.org/2000/01/rdf-schema#comment> "Links to code which will be executed before a resource representation is passed to a request handler" <https://hypermedia.app/query#> .
-<https://hypermedia.app/query#preprocess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/query#> .
 <https://hypermedia.app/query#templateMappings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/query#> .
 <https://hypermedia.app/query#templateMappings> <http://www.w3.org/2000/01/rdf-schema#comment> "(Blank) resource which was used to expand hydra:IriTemplate, resulting in the current resource's identifier" <https://hypermedia.app/query#> .
