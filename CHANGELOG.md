@@ -1,5 +1,12 @@
 # @hydrofoil/vocabularies
 
+## 0.3.0
+
+### Minor Changes
+
+- ca6f7c9: - Remove `query:preprocess`
+  - Add instead `knossos:preprocessResource`, `knossos:preprocessPayload` and `knossos:preprocessResponse`
+
 ## 0.2.4
 
 ### Patch Changes

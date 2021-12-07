@@ -29,6 +29,21 @@
 <https://hypermedia.app/knossos#ownGraphOnly> <http://www.w3.org/2000/01/rdf-schema#comment> "Used with a hydra:memberAssertion, this property narrows down a static filter to member's named graph only" <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#ownGraphOnly> <http://www.w3.org/2000/01/rdf-schema#label> "named graph" <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#ownGraphOnly> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessPayload> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScript> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessPayload> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScriptModule> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessPayload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessPayload> <http://www.w3.org/2000/01/rdf-schema#comment> "Links to code which will be executed before request payload is passed to a request handler" <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessPayload> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessResource> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScript> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessResource> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScriptModule> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Links to code which will be executed before a resource representation is passed to a request handler" <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessResponse> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScript> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessResponse> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScriptModule> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Links to code which will be executed before response data is sent by labyrinth's GET handlers" <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#preprocessResponse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#supportedBy> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/hydra/core#Class> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#supportedBy> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/hydra/core#Link> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#supportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
