@@ -90,3 +90,27 @@ knossos:authorizationRule
   rdfs:label "authorizationRule" ;
   rdfs:comment "Adds authorization rules to customize handling of ACLs" ;
 .
+
+knossos:preprocessResource
+  a rdf:Property ;
+  rdfs:domain rdfs:Class ;
+  schema:rangeIncludes code:EcmaScript, code:EcmaScriptModule ;
+  rdfs:comment
+    "Links to code which will be executed before a resource representation is passed to a request handler"
+.
+
+knossos:preprocessPayload
+  a rdf:Property ;
+  rdfs:domain rdfs:Class ;
+  schema:rangeIncludes code:EcmaScript, code:EcmaScriptModule ;
+  rdfs:comment
+    "Links to code which will be executed before request payload is passed to a request handler"
+.
+
+knossos:preprocessResponse
+  a rdf:Property ;
+  rdfs:domain rdfs:Class ;
+  schema:rangeIncludes code:EcmaScript, code:EcmaScriptModule ;
+  rdfs:comment
+    "Links to code which will be executed before response data is sent by labyrinth's GET handlers"
+.

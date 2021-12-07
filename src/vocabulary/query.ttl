@@ -18,14 +18,6 @@ hyper-query:templateMappings
     "(Blank) resource which was used to expand hydra:IriTemplate, resulting in the current resource's identifier" ;
 .
 
-hyper-query:preprocess
-  a rdf:Property ;
-  rdfs:domain rdfs:Class ;
-  schema:rangeIncludes code:EcmaScript ;
-  rdfs:comment
-    "Links to code which will be executed before a resource representation is passed to a request handler"
-.
-
 hyper-query:order
   a rdf:Property ;
   rdfs:comment
