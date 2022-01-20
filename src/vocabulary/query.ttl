@@ -44,3 +44,8 @@ hyper-query:include
   a rdf:Property ;
   rdfs:comment "Includes linked resources in API queries" ;
 .
+
+hyper-query:optional
+  a rdf:Property ;
+  rdfs:comment "Annotates a query incldue pattern as optional" ;
+.
