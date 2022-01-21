@@ -8,6 +8,8 @@
 <https://hypermedia.app/query#filter> <http://www.w3.org/2000/01/rdf-schema#comment> "Links to code which will be used to filter a hydra:Collection for example" <https://hypermedia.app/query#> .
 <https://hypermedia.app/query#include> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/query#> .
 <https://hypermedia.app/query#include> <http://www.w3.org/2000/01/rdf-schema#comment> "Includes linked resources in API queries" <https://hypermedia.app/query#> .
+<https://hypermedia.app/query#memberInclude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/query#> .
+<https://hypermedia.app/query#memberInclude> <http://www.w3.org/2000/01/rdf-schema#comment> "Includes linked resources in API collection queries" <https://hypermedia.app/query#> .
 <https://hypermedia.app/query#order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/query#> .
 <https://hypermedia.app/query#order> <http://www.w3.org/2000/01/rdf-schema#comment> "Declares how a given resource (typically collection) is ordered. Its object must be an RDF List of hyper-query:OrderSpecification" <https://hypermedia.app/query#> .
 <https://hypermedia.app/query#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/query#> .

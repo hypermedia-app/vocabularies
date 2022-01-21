@@ -44,3 +44,8 @@ hyper-query:include
   a rdf:Property ;
   rdfs:comment "Includes linked resources in API queries" ;
 .
+
+hyper-query:memberInclude
+  a rdf:Property ;
+  rdfs:comment "Includes linked resources in API collection queries" ;
+.
