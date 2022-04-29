@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.3.1
+
+### Patch Changes
+
+- a2a1ff0: Added Hydra extensions Vocabulary
+
 ## 0.3.0
 
 ### Minor Changes
