@@ -16,6 +16,10 @@ export const overrides: Record<string, Override> = {
     file: 'https://raw.githubusercontent.com/zazuko/code.described.at/master/vocab.nt',
     mediaType: 'text/turtle'
   },
+  hex: {
+    file: 'https://hydracg.github.io/extensions/extensions.ttl',
+    mediaType: 'text/turtle'
+  },
   hydraBox: {
     file: 'file:src/vocabulary/hydraBox.ttl'
   },

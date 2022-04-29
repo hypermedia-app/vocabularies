@@ -5,7 +5,8 @@ const prefixes = {
   'hyper-events': 'https://hypermedia.app/events#',
   'hyper-query': 'https://hypermedia.app/query#',
   knossos: 'https://hypermedia.app/knossos#',
-  roadshow: 'https://hypermedia.app/roadshow#'
+  roadshow: 'https://hypermedia.app/roadshow#',
+  hex: 'https://w3id.org/hydra/extension#'
 }
 
 type LocalPrefixes = typeof prefixes
