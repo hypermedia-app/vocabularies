@@ -67,9 +67,9 @@
   "author": "Tomasz Pluskiewicz <awesome@hypermedia.app>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hypermedia-app/shaperone/issues"
+    "url": "https://github.com/hypermedia-app/vocabularies/issues"
   },
-  "repository": "https://github.com/hypermedia-app/shaperone",
+  "repository": "https://github.com/hypermedia-app/vocabularies",
   "devDependencies": {
     "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.3",
