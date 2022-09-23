@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.3.2
+
+### Patch Changes
+
+- 8ab023e: Added `knossos:beforeSend`, updated some `schema:rangeInclude`
+
 ## 0.3.1
 
 ### Patch Changes
