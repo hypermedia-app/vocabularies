@@ -11,8 +11,15 @@ prefix knossos: <https://hypermedia.app/knossos#>
 knossos:beforeSave
   a rdf:Property ;
   rdfs:range rdfs:Class ;
-  schema:rangeIncludes code:EcmaScript ;
+  schema:rangeIncludes code:EcmaScript, code:EcmaScriptModule ;
   rdfs:comment "Links to code which will be executed when an instance of given class is saved" ;
+.
+
+knossos:beforeSend
+  a rdf:Property ;
+  rdfs:range rdfs:Class ;
+  schema:rangeIncludes code:EcmaScript, code:EcmaScriptModule ;
+  rdfs:comment "Links to code which will be executed just before an RDF response is sent" ;
 .
 
 knossos:createWithPUT
@@ -61,7 +68,7 @@ knossos:supportedBy
 knossos:transformVariable
   a rdf:Property ;
   rdfs:domain hydra:IriTemplateMapping ;
-  schema:rangeIncludes code:EcmaScript ;
+  schema:rangeIncludes code:EcmaScript, code:EcmaScriptModule ;
   rdfs:comment "Annotates a template mapping variable mapping which will be passed to a transformation function, for example to slugify a string value"
 .
 

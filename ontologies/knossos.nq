@@ -10,9 +10,15 @@
 <https://hypermedia.app/knossos#authorizationRule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hypermedia.app/knossos#Configuration> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#authorizationRule> <http://www.w3.org/2000/01/rdf-schema#label> "authorizationRule" <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#beforeSave> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScript> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#beforeSave> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScriptModule> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#beforeSave> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#beforeSave> <http://www.w3.org/2000/01/rdf-schema#comment> "Links to code which will be executed when an instance of given class is saved" <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#beforeSave> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#beforeSend> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScript> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#beforeSend> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScriptModule> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#beforeSend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#beforeSend> <http://www.w3.org/2000/01/rdf-schema#comment> "Links to code which will be executed just before an RDF response is sent" <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#beforeSend> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#createWithPUT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#createWithPUT> <http://www.w3.org/2000/01/rdf-schema#comment> "Set to true to allow new resources of given class being created using PUT requests." <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#createWithPUT> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/knossos#> .
@@ -54,6 +60,7 @@
 <https://hypermedia.app/knossos#supportedByClass> <http://www.w3.org/2002/07/owl#sameAs> <https://hypermedia.app/knossos#supportedBy> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#supportedByProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://hypermedia.app/knossos#supportedBy> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#transformVariable> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScript> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#transformVariable> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScriptModule> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#transformVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#transformVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Annotates a template mapping variable mapping which will be passed to a transformation function, for example to slugify a string value" <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#transformVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/hydra/core#IriTemplateMapping> <https://hypermedia.app/knossos#> .
