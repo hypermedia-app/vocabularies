@@ -23,6 +23,14 @@
 <https://hypermedia.app/knossos#createWithPUT> <http://www.w3.org/2000/01/rdf-schema#comment> "Set to true to allow new resources of given class being created using PUT requests." <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#createWithPUT> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#createWithPUT> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#describeStrategy> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScript> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#describeStrategy> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScriptModule> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#describeStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#describeStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links to code preparing the SPARQL query which loads the triples of a resource" <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#memberDescribeStrategy> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScript> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#memberDescribeStrategy> <http://schema.org/rangeIncludes> <https://code.described.at/EcmaScriptModule> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#memberDescribeStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
+<https://hypermedia.app/knossos#memberDescribeStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links to code preparing the SPARQL query which loads the triples of a collection's members" <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#memberTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#memberTemplate> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines an identifier template for newly created instances of given class. Used by knossos' default collection POST handler." <https://hypermedia.app/knossos#> .
 <https://hypermedia.app/knossos#memberTemplate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> <https://hypermedia.app/knossos#> .

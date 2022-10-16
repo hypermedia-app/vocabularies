@@ -121,3 +121,15 @@ knossos:preprocessResponse
   rdfs:comment
     "Links to code which will be executed before response data is sent by labyrinth's GET handlers"
 .
+
+knossos:describeStrategy
+  a rdf:Property ;
+  schema:rangeIncludes code:EcmaScript, code:EcmaScriptModule ;
+  rdfs:comment "Links to code preparing the SPARQL query which loads the triples of a resource" ;
+.
+
+knossos:memberDescribeStrategy
+  a rdf:Property ;
+  schema:rangeIncludes code:EcmaScript, code:EcmaScriptModule ;
+  rdfs:comment "Links to code preparing the SPARQL query which loads the triples of a collection's members" ;
+.
