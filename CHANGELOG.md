@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.3.3
+
+### Patch Changes
+
+- 94650d3: `knossos:describeStrategy` and `knossos:memberDescribeStrategy`
+
 ## 0.3.2
 
 ### Patch Changes
