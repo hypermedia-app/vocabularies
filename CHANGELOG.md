@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 0.3.4
+
+### Patch Changes
+
+- 6abf302: `vocabularies` export would not work in node using ES modules
+
 ## 0.3.3
 
 ### Patch Changes
