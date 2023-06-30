@@ -2,6 +2,7 @@
   "name": "@hydrofoil/vocabularies",
   "private": true,
   "scripts": {
+    "postinstall": "yarn-deduplicate",
     "fetch": "wsrun -lm --report -c fetch",
     "lint": "eslint . --ext .js,.ts --ignore-path .gitignore --quiet",
     "release": "changeset publish"
@@ -9,7 +10,7 @@
   "author": "Tomasz Pluskiewicz <awesome@hypermedia.app>",
   "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.16.0",
+    "@changesets/cli": "^2.26.2",
     "@tpluscode/eslint-config": "0.4.3",
     "@tpluscode/rdf-ns-builders": "^4",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
@@ -24,7 +25,8 @@
     "eslint-plugin-standard": "^4.0.0",
     "standard": ">=11",
     "typescript": "^5.1.6",
-    "wsrun": "^5.2.4"
+    "wsrun": "^5.2.4",
+    "yarn-deduplicate": "^6.0.2"
   },
   "keywords": [
     "rdf",
