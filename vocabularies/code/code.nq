@@ -1,0 +1,36 @@
+<https://code.described.at/EcmaScript> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/EcmaScript> <http://www.w3.org/2000/01/rdf-schema#comment> "Code as defined by the ECMAScript specification" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/EcmaScript> <http://www.w3.org/2000/01/rdf-schema#label> "ECMAScript Code" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/EcmaScriptTemplateLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/EcmaScriptTemplateLiteral> <http://www.w3.org/2000/01/rdf-schema#comment> "Template Literal as defined in the ES2015 ECMAScript specification" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/EcmaScriptTemplateLiteral> <http://www.w3.org/2000/01/rdf-schema#label> "ECMAScript Template Literal" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/SparqlEcmaScriptTemplateLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/SparqlEcmaScriptTemplateLiteral> <http://www.w3.org/2000/01/rdf-schema#comment> "ES2015 ECMAScript Template Literal enriched SPARQL query" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/SparqlEcmaScriptTemplateLiteral> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL ECMAScript Template Literal" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/Variable> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition of a variable" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/Variable> <http://www.w3.org/2000/01/rdf-schema#label> "Variable" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/VariableName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/VariableName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a variable" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/VariableName> <http://www.w3.org/2000/01/rdf-schema#label> "Variable Name" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/arguments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/arguments> <http://www.w3.org/2000/01/rdf-schema#comment> "Arguments for a code call" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/arguments> <http://www.w3.org/2000/01/rdf-schema#label> "Arguments" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/implementedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/implementedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the implementation" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/implementedBy> <http://www.w3.org/2000/01/rdf-schema#label> "Implementation" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/link> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/link> <http://www.w3.org/2000/01/rdf-schema#comment> "IRI of the executable code" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/link> <http://www.w3.org/2000/01/rdf-schema#label> "Code" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a variable" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/name> <http://www.w3.org/2000/01/rdf-schema#label> "Name" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/value> <http://www.w3.org/2000/01/rdf-schema#comment> "Value of a variable" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/value> <http://www.w3.org/2000/01/rdf-schema#label> "Value" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/variable> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition of a variable" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/variable> <http://www.w3.org/2000/01/rdf-schema#label> "Variable" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/variables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/variables> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of variable definitions" <https://w3id.org/hydra/extension#shacl> .
+<https://code.described.at/variables> <http://www.w3.org/2000/01/rdf-schema#label> "Variable definitions" <https://w3id.org/hydra/extension#shacl> .

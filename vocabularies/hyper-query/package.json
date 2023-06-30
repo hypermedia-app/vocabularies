@@ -1,0 +1,19 @@
+{
+  "name": "@hydrofoil/vocab-hyper-query",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "fetch": "vocab-build datasets",
+    "prebuild": "vocab-build module",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@vocabulary/builder": "^1.0.2"
+  },
+  "vocabulary": {
+    "prefix": "hyper-query",
+    "namespace": "https://hypermedia.app/query#",
+    "file": "file:src/query.ttl"
+  }
+}

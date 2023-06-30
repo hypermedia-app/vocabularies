@@ -3,9 +3,5 @@ coverage
 *.d.ts
 *.d.ts.map
 *.js
-*.mjs
-!loadDataset/index.mjs
-src/datasets/
-!.eslintrc.js
-!bin/
 src/builders/
+yarn-error.log

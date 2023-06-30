@@ -1,0 +1,19 @@
+{
+  "name": "@hydrofoil/vocab-hyper-auth",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "fetch": "vocab-build datasets",
+    "prebuild": "vocab-build module",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@vocabulary/builder": "^1.0.2"
+  },
+  "vocabulary": {
+    "prefix": "hyper-auth",
+    "namespace": "https://hypermedia.app/auth#",
+    "file": "file:src/auth.ttl"
+  }
+}

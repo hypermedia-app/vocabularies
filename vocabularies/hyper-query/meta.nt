@@ -1,0 +1,5 @@
+<https://prefix.zazuko.com/hyper-query:> <http://dbpedia.org/ontology/filename> "@hydrofoil/vocab-hyper-query/hyper-query.nq" .
+<https://prefix.zazuko.com/hyper-query:> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/rdfa#PrefixMapping> .
+<https://prefix.zazuko.com/hyper-query:> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <file:src/query.ttl> .
+<https://prefix.zazuko.com/hyper-query:> <http://www.w3.org/ns/rdfa#prefix> "hyper-query" .
+<https://prefix.zazuko.com/hyper-query:> <http://www.w3.org/ns/rdfa#uri> <https://hypermedia.app/query#> .

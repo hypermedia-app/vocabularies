@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-const program = require('commander')
-const { promisify } = require('util')
-const stream = require('readable-stream')
-const { loadDatasetStream } = require('../loadDataset')
-const prefixes = require('../prefixes')
+import program from 'commander'
+import { promisify } from 'util'
+import stream from 'readable-stream'
+import { loadDatasetStream } from '../loadDataset/index.js'
+import prefixes from '../prefixes.js'
 
 const finished = promisify(stream.finished)
 

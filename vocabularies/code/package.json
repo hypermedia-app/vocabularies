@@ -1,0 +1,20 @@
+{
+  "name": "@hydrofoil/vocab-code",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "fetch": "vocab-build datasets",
+    "prebuild": "vocab-build module",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@vocabulary/builder": "^1.0.2"
+  },
+  "vocabulary": {
+    "prefix": "code",
+    "namespace": "https://w3id.org/hydra/extension#shacl",
+    "file": "https://raw.githubusercontent.com/zazuko/code.described.at/master/vocab.nt",
+    "mediaType": "text/turtle"
+  }
+}

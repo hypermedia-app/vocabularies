@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
+    "target": "ES2022",
+    "module": "ES2022",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "moduleResolution": "node",
@@ -13,14 +13,7 @@
       "es2015",
       "webworker"
     ],
-    "outDir": ".",
     "declaration": true,
     "declarationMap": true
-  },
-  "files": [
-    "src/index.ts",
-    "src/datasets/index.ts",
-    "src/builders/index.ts",
-    "src/builders/strict.ts"
-  ]
+  }
 }

@@ -1,125 +1,30 @@
 {
   "name": "@hydrofoil/vocabularies",
-  "version": "0.3.3",
-  "description": "Access your vocabularies as datasets or n-quads",
-  "main": "index.js",
-  "module": "index.mjs",
-  "browser": "index.mjs",
-  "bin": {
-    "happ-vocab": "bin/vocab.js"
-  },
-  "exports": {
-    ".": {
-      "require": "./index.js",
-      "import": "./index.mjs"
-    },
-    "./vocabularies": {
-      "require": "./vocabularies.js",
-      "import": "./vocabularies.mjs"
-    },
-    "./prefixes": {
-      "require": "./prefixes.js",
-      "import": "./prefixes.mjs"
-    },
-    "./datasets": {
-      "require": "./datasets/index.js",
-      "import": "./datasets/index.mjs"
-    },
-    "./builders": {
-      "require": "./builders/index.js",
-      "import": "./builders/index.mjs"
-    },
-    "./builders/strict": {
-      "require": "./builders/strict.js",
-      "import": "./builders/strict.mjs"
-    },
-    "./datasets/*": {
-      "require": "./datasets/*.js",
-      "import": "./datasets/*.mjs"
-    }
-  },
-  "files": [
-    "bin",
-    "builders",
-    "loadDataset",
-    "datasets",
-    "ontologies",
-    "*.js",
-    "*.mjs",
-    "*.d.ts",
-    "*.d.ts.map"
-  ],
+  "private": true,
   "scripts": {
-    "prepare": "husky install",
-    "prefetch": "mkdirp ontologies",
-    "fetch": "ts-node build/fetch.ts --indexBase https://prefix.hypermedia.app/",
+    "fetch": "wsrun -lm --report -c fetch",
     "lint": "eslint . --ext .js,.ts --ignore-path .gitignore --quiet",
-    "pretest": "npm run lint",
-    "prepare:modules": "mkdirp src/datasets; ts-node build/modules",
-    "prepare:builders": "rdf-ns-builders generate -p ./src -o src/builders",
-    "prebuild": "run-p prepare:*",
-    "build:node": "tsc",
-    "build:modern": "babel src --out-dir . --extensions .ts --out-file-extension .mjs --ignore *.test.js --ignore src/loadDataset/index.ts",
-    "build": "run-p build:*",
-    "prepack": "npm run build",
     "release": "changeset publish"
   },
   "author": "Tomasz Pluskiewicz <awesome@hypermedia.app>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hypermedia-app/vocabularies/issues"
-  },
-  "repository": "https://github.com/hypermedia-app/vocabularies",
   "devDependencies": {
-    "@babel/cli": "^7.14.3",
-    "@babel/core": "^7.14.3",
-    "@babel/preset-typescript": "^7.13.0",
     "@changesets/cli": "^2.16.0",
-    "@rdfjs/fetch-lite": "^2.1.0",
-    "@rdfjs/formats-common": "^2.1.0",
-    "@rdfjs/serializer-rdfjs": "^0.0.4",
-    "@tpluscode/rdf-ns-builders": "^1",
-    "@types/chai": "^4.2.14",
-    "@types/file-fetch": "^1.6.0",
-    "@types/node-fetch": "^2.5.10",
-    "@types/proto-fetch": "^1.0.0",
-    "@types/rdf-dataset-indexed": "^0.4.6",
-    "@types/rdf-ext": "^1.3.9",
-    "@types/rdfjs__fetch-lite": "^2.0.3",
-    "@types/rdfjs__formats-common": "^2.0.2",
-    "@types/rdfjs__parser-n3": "^1.1.4",
-    "@types/rdfjs__serializer-rdfjs": "^0.0.1",
-    "@typescript-eslint/eslint-plugin": "^1.12.0",
-    "@typescript-eslint/parser": "^1.12.0",
-    "babel-plugin-add-import-extension": "^1.5.0",
-    "clownface": "^1.2.0",
-    "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.3.1",
+    "@tpluscode/eslint-config": "0.4.3",
+    "@tpluscode/rdf-ns-builders": "^4",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "eslint": ">=6",
+    "eslint-config-standard": ">=11",
+    "eslint-plugin-import": ">=2",
+    "eslint-plugin-n": ">=15",
+    "eslint-plugin-node": ">=11",
+    "eslint-plugin-promise": ">=6",
+    "eslint-plugin-require-extensions": ">=0.1.3",
     "eslint-plugin-standard": "^4.0.0",
-    "file-fetch": "^1.7",
-    "husky": "^6.0.0",
-    "nodeify-fetch": "^2.2.1",
-    "npm-run-all": "^4.1.5",
-    "proto-fetch": "^1.0.0",
-    "rdfxml-streaming-parser": "^1.4.0",
-    "rimraf": "^3.0.2",
-    "ts-morph": "^11.0.0",
-    "ts-node": "^8.10.2",
-    "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "@rdf-esm/namespace": "^0.5.3",
-    "@rdfjs/parser-n3": "^1.1.4",
-    "@zazuko/rdf-vocabularies": "*",
-    "commander": "^5.0.0",
-    "pkg-dir": "^5.0.0",
-    "rdf-ext": "^1.3.1",
-    "rdf-js": "*",
-    "readable-stream": "^3.6.0",
-    "string-to-stream": "^3.0.1"
+    "standard": ">=11",
+    "typescript": "^5.1.6",
+    "wsrun": "^5.2.4"
   },
   "keywords": [
     "rdf",
@@ -128,5 +33,9 @@
     "namespace",
     "ontologies",
     "vocabularies"
+  ],
+  "workspaces": [
+    "vocabularies/*",
+    "src"
   ]
 }

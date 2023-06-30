@@ -1,0 +1,70 @@
+{
+  "name": "@hydrofoil/vocabularies",
+  "version": "0.3.3",
+  "description": "Access your vocabularies as datasets or n-quads",
+  "main": "index.js",
+  "module": "index.js",
+  "browser": "index.js",
+  "type": "module",
+  "bin": {
+    "happ-vocab": "bin/vocab.js"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./vocabularies": "./vocabularies.js",
+    "./prefixes": "./prefixes.js",
+    "./builders": "./builders/index.js",
+    "./builders/strict": "./builders/strict.js"
+  },
+  "files": [
+    "bin",
+    "builders",
+    "loadDataset",
+    "datasets",
+    "ontologies",
+    "*.js",
+    "*.mjs",
+    "*.d.ts",
+    "*.d.ts.map"
+  ],
+  "scripts": {
+    "prebuild": "npx --node-options='--loader=ts-node/esm' rdf-ns-builders generate -p ./index.ts -o builders",
+    "build": "tsc",
+    "prepack": "npm run build",
+    "release": "changeset publish"
+  },
+  "author": "Tomasz Pluskiewicz <awesome@hypermedia.app>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hypermedia-app/vocabularies/issues"
+  },
+  "repository": "https://github.com/hypermedia-app/vocabularies",
+  "dependencies": {
+    "@hydrofoil/vocab-code": "^0.0.0",
+    "@hydrofoil/vocab-hex": "^0.0.0",
+    "@hydrofoil/vocab-hydra-box": "^0.0.0",
+    "@hydrofoil/vocab-hyper-auth": "^0.0.0",
+    "@hydrofoil/vocab-hyper-events": "^0.0.0",
+    "@hydrofoil/vocab-hyper-query": "^0.0.0",
+    "@hydrofoil/vocab-roadshow": "^0.0.0",
+    "@hydrofoil/vocab-knossos": "^0.0.0",
+    "@rdfjs/parser-n3": "^2.0.1",
+    "@zazuko/prefixes": "^2.0.0",
+    "commander": "^5.0.0",
+    "rdf-ext": "^2.2.0",
+    "readable-stream": "3 - 4"
+  },
+  "devDependencies": {
+    "@tpluscode/rdf-ns-builder-generator": "^1.0.0",
+    "@types/rdf-ext": "^2",
+    "@types/rdfjs__parser-n3": "^2.0.1"
+  },
+  "keywords": [
+    "rdf",
+    "rdfjs",
+    "prefix",
+    "namespace",
+    "ontologies",
+    "vocabularies"
+  ]
+}
