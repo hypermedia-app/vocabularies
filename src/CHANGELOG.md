@@ -1,5 +1,23 @@
 # @hydrofoil/vocabularies
 
+## 1.0.0
+
+### Major Changes
+
+- f89152a: Change to ESM
+
+### Patch Changes
+
+- Updated dependencies [f89152a]
+  - @hydrofoil/vocab-code@1.0.0
+  - @hydrofoil/vocab-hex@1.0.0
+  - @hydrofoil/vocab-hydra-box@1.0.0
+  - @hydrofoil/vocab-hyper-auth@1.0.0
+  - @hydrofoil/vocab-hyper-events@1.0.0
+  - @hydrofoil/vocab-hyper-query@1.0.0
+  - @hydrofoil/vocab-knossos@1.0.0
+  - @hydrofoil/vocab-roadshow@1.0.0
+
 ## 0.3.4
 
 ### Patch Changes
