@@ -14,19 +14,8 @@
     "./vocabularies": "./vocabularies.js",
     "./prefixes": "./prefixes.js",
     "./builders": "./builders/index.js",
-    "./builders/strict": "./builders/strict.js"
+    "./builders/loose": "./builders/loose.js"
   },
-  "files": [
-    "bin",
-    "builders",
-    "loadDataset",
-    "datasets",
-    "ontologies",
-    "*.js",
-    "*.mjs",
-    "*.d.ts",
-    "*.d.ts.map"
-  ],
   "scripts": {
     "prebuild": "npx --node-options='--loader=ts-node/esm' rdf-ns-builders generate -p ./index.ts -o builders",
     "build": "tsc",
