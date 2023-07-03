@@ -1,5 +1,12 @@
 # @hydrofoil/vocabularies
 
+## 1.0.1
+
+### Patch Changes
+
+- d26107f: Remove .ts from package
+- d26107f: Wrong exports `strict` instead of `loose`
+
 ## 1.0.0
 
 ### Major Changes
