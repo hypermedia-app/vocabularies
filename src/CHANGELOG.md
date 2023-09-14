@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 1.1.0
+
+### Minor Changes
+
+- 2d16191: Remove rdf-ext
+
 ## 1.0.1
 
 ### Patch Changes
