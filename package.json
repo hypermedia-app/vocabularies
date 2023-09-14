@@ -2,7 +2,6 @@
   "name": "@hydrofoil/vocabularies",
   "private": true,
   "scripts": {
-    "postinstall": "yarn-deduplicate",
     "fetch": "wsrun -lm --report -c fetch",
     "lint": "eslint . --ext .js,.ts --ignore-path .gitignore --quiet",
     "release": "changeset publish"
@@ -11,6 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
+    "@rdfjs/types": "^1.1.0",
     "@tpluscode/eslint-config": "0.4.3",
     "@tpluscode/rdf-ns-builders": "^4",
     "@typescript-eslint/eslint-plugin": "^5.60.1",

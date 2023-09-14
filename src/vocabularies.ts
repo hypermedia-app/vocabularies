@@ -1,13 +1,15 @@
 /* eslint-disable no-console */
-import { Stream } from 'rdf-js'
 import { Readable } from 'stream'
-import rdf from 'rdf-ext'
-import DatasetExt from 'rdf-ext/lib/Dataset'
+import type { DatasetCore, Stream } from '@rdfjs/types'
+import rdf from '@zazuko/env'
 import ParserN3 from '@rdfjs/parser-n3'
-import prefixes from './prefixes.js'
+import fromStream from 'rdf-dataset-ext/fromStream.js'
+import addAll from 'rdf-dataset-ext/addAll.js'
+import toStream from 'rdf-dataset-ext/toStream.js'
 import { loadDatasetStream } from './loadDataset/index.js'
+import prefixes from './prefixes.js'
 
-export type Datasets = Partial<Record<keyof typeof prefixes, DatasetExt>>
+export type Datasets = Partial<Record<keyof typeof prefixes, DatasetCore>>
 
 interface VocabulariesOptions {
   only?: (keyof typeof prefixes)[] | null
@@ -48,10 +50,10 @@ export async function vocabularies(options: VocabulariesDatasetOptions | Vocabul
     let combinedDataset = factory.dataset()
     datasets.forEach((dataset) => {
       if (dataset && dataset.size) {
-        combinedDataset = combinedDataset.merge(dataset)
+        combinedDataset = addAll(combinedDataset, dataset)
       }
     })
-    return combinedDataset.toStream()
+    return toStream(combinedDataset) as any
   }
 
   const result: Datasets = {}
@@ -72,7 +74,7 @@ export async function loadFile(prefix: keyof typeof prefixes, { customSelection,
   const parserN3 = new ParserN3()
   const readStream = await loadDatasetStream(prefix)
   const quadStream = parserN3.import(readStream)
-  return factory.dataset().import(quadStream).catch(() => {
+  return fromStream(factory.dataset(), quadStream).catch(() => {
     if (customSelection) {
       console.warn(`unavailable prefix '${prefix}'`)
     }

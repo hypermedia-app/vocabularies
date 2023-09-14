@@ -9,7 +9,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@vocabulary/builder": "^1.0.2"
+    "@vocabulary/builder": "^1.0.3"
   },
   "vocabulary": {
     "prefix": "hyper-auth",
