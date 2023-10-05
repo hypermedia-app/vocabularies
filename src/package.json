@@ -13,7 +13,7 @@
     ".": "./index.js",
     "./vocabularies": "./vocabularies.js",
     "./prefixes": "./prefixes.js",
-    "./builders": "./builders/index.js",
+    "./builders": "./builders/strict.js",
     "./builders/loose": "./builders/loose.js"
   },
   "scripts": {
