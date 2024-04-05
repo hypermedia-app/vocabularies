@@ -4,4 +4,4 @@ coverage
 *.d.ts.map
 *.js
 src/builders/
-yarn-error.log
+vocabularies/*/index.ts
