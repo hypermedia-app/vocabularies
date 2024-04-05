@@ -5,15 +5,20 @@ import ParserN3 from '@rdfjs/parser-n3'
 import fromStream from 'rdf-dataset-ext/fromStream.js'
 import addAll from 'rdf-dataset-ext/addAll.js'
 import toStream from 'rdf-dataset-ext/toStream.js'
-import { Environment } from '@rdfjs/environment/Environment.js'
+import E, { Environment } from '@rdfjs/environment/Environment.js'
+import DatasetFactory from '@rdfjs/dataset/Factory.js'
 import { loadDatasetStream } from './loadDataset/index.js'
 import prefixes from './prefixes.js'
 
+const defaultFactory = new E([DatasetFactory])
+
 export type Datasets<D extends DatasetCore> = Partial<Record<keyof typeof prefixes, D>>
+
+type Factory<D extends DatasetCore> = Environment<DatasetCoreFactory<any, any, D>>
 
 interface VocabulariesOptions<D extends DatasetCore> {
   only?: (keyof typeof prefixes)[] | null
-  factory: Environment<DatasetCoreFactory<any, any, D>>
+  factory?: Factory<D>
 }
 
 interface VocabulariesDatasetOptions<D extends DatasetCore> extends VocabulariesOptions<D> {
@@ -24,10 +29,11 @@ interface VocabulariesStreamOptions<D extends DatasetCore> extends VocabulariesO
   stream: true
 }
 
-export async function vocabularies<D extends DatasetCore>(options: VocabulariesDatasetOptions<D>): Promise<Datasets<D>>
-export async function vocabularies<D extends DatasetCore>(options: VocabulariesStreamOptions<D>): Promise<Stream & Readable>
-export async function vocabularies<D extends DatasetCore>(options: VocabulariesDatasetOptions<D> | VocabulariesStreamOptions<D>) {
-  const { only = null, factory, stream = false } = options
+export async function vocabularies<D extends DatasetCore = DatasetCore>(options?: VocabulariesDatasetOptions<D>): Promise<Datasets<D>>
+export async function vocabularies<D extends DatasetCore = DatasetCore>(options: VocabulariesStreamOptions<D>): Promise<Stream & Readable>
+export async function vocabularies<D extends DatasetCore = DatasetCore>(options: VocabulariesDatasetOptions<D> | VocabulariesStreamOptions<D> = {}) {
+  const { only = null, stream = false } = options
+  const factory = options.factory || defaultFactory as unknown as Factory<D>
   let selectedPrefixes: (keyof typeof prefixes)[] = []
 
   if (!!only && Array.isArray(only)) {
@@ -43,8 +49,8 @@ export async function vocabularies<D extends DatasetCore>(options: VocabulariesD
     selectedPrefixes = Object.keys(prefixes) as any
   }
 
-  const promises = selectedPrefixes.map((prefix) => loadFile(prefix, { customSelection: !!only, factory }))
-  const datasets = await Promise.all(promises)
+  const promises = selectedPrefixes.map((prefix) => loadFile<D>(prefix, { customSelection: !!only, factory }))
+  const datasets: D[] = await Promise.all(promises)
 
   if (stream !== false) {
     let combinedDataset = factory.dataset()
@@ -67,7 +73,7 @@ export async function vocabularies<D extends DatasetCore>(options: VocabulariesD
 
 interface LoadFileOptions<D extends DatasetCore> {
   customSelection?: boolean
-  factory: Environment<DatasetCoreFactory<any, any, D>>
+  factory: Factory<D>
 }
 
 export async function loadFile<D extends DatasetCore>(prefix: keyof typeof prefixes, { customSelection, factory }: LoadFileOptions<D>): Promise<D> {
