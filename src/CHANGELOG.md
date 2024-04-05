@@ -1,5 +1,28 @@
 # @hydrofoil/vocabularies
 
+## 2.0.0
+
+### Major Changes
+
+- 6dcc996: Remove dependency on `@zazuko/env` and require factory as parameter
+
+### Minor Changes
+
+- 5d023b1: Made the functions generic, with dataset type inferred
+
+### Patch Changes
+
+- 6dcc996: Built with `moduleResolution=NodeNext`
+- Updated dependencies [6dcc996]
+  - @hydrofoil/vocab-code@1.0.1
+  - @hydrofoil/vocab-hex@1.0.1
+  - @hydrofoil/vocab-hydra-box@1.0.1
+  - @hydrofoil/vocab-hyper-auth@1.0.1
+  - @hydrofoil/vocab-hyper-events@1.0.1
+  - @hydrofoil/vocab-hyper-query@1.0.1
+  - @hydrofoil/vocab-knossos@1.0.1
+  - @hydrofoil/vocab-roadshow@1.0.1
+
 ## 1.1.1
 
 ### Patch Changes

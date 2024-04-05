@@ -1,6 +1,6 @@
 {
   "name": "@hydrofoil/vocab-hyper-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "fetch": "vocab-build datasets",
