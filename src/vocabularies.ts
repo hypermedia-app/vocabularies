@@ -9,24 +9,24 @@ import { Environment } from '@rdfjs/environment/Environment.js'
 import { loadDatasetStream } from './loadDataset/index.js'
 import prefixes from './prefixes.js'
 
-export type Datasets = Partial<Record<keyof typeof prefixes, DatasetCore>>
+export type Datasets<D extends DatasetCore> = Partial<Record<keyof typeof prefixes, D>>
 
-interface VocabulariesOptions {
+interface VocabulariesOptions<D extends DatasetCore> {
   only?: (keyof typeof prefixes)[] | null
-  factory: Environment<DatasetCoreFactory>
+  factory: Environment<DatasetCoreFactory<any, any, D>>
 }
 
-interface VocabulariesDatasetOptions extends VocabulariesOptions {
+interface VocabulariesDatasetOptions<D extends DatasetCore> extends VocabulariesOptions<D> {
   stream?: false
 }
 
-interface VocabulariesStreamOptions extends VocabulariesOptions {
+interface VocabulariesStreamOptions<D extends DatasetCore> extends VocabulariesOptions<D> {
   stream: true
 }
 
-export async function vocabularies (options: VocabulariesDatasetOptions): Promise<Datasets>
-export async function vocabularies (options: VocabulariesStreamOptions): Promise<Stream & Readable>
-export async function vocabularies(options: VocabulariesDatasetOptions | VocabulariesStreamOptions) {
+export async function vocabularies<D extends DatasetCore>(options: VocabulariesDatasetOptions<D>): Promise<Datasets<D>>
+export async function vocabularies<D extends DatasetCore>(options: VocabulariesStreamOptions<D>): Promise<Stream & Readable>
+export async function vocabularies<D extends DatasetCore>(options: VocabulariesDatasetOptions<D> | VocabulariesStreamOptions<D>) {
   const { only = null, factory, stream = false } = options
   let selectedPrefixes: (keyof typeof prefixes)[] = []
 
@@ -56,7 +56,7 @@ export async function vocabularies(options: VocabulariesDatasetOptions | Vocabul
     return toStream(combinedDataset) as any
   }
 
-  const result: Datasets = {}
+  const result: Datasets<D> = {}
   datasets.forEach((dataset, i) => {
     if (dataset && dataset.size) {
       result[selectedPrefixes[i]] = dataset
@@ -65,18 +65,22 @@ export async function vocabularies(options: VocabulariesDatasetOptions | Vocabul
   return result
 }
 
-interface LoadFileOptions {
+interface LoadFileOptions<D extends DatasetCore> {
   customSelection?: boolean
-  factory: Environment<DatasetCoreFactory>
+  factory: Environment<DatasetCoreFactory<any, any, D>>
 }
 
-export async function loadFile(prefix: keyof typeof prefixes, { customSelection, factory }: LoadFileOptions) {
+export async function loadFile<D extends DatasetCore>(prefix: keyof typeof prefixes, { customSelection, factory }: LoadFileOptions<D>): Promise<D> {
   const parserN3 = new ParserN3()
   const readStream = await loadDatasetStream(prefix)
   const quadStream = parserN3.import(readStream)
-  return fromStream(factory.dataset(), quadStream).catch(() => {
+
+  const dataset = factory.dataset()
+  await fromStream(dataset, quadStream).catch(() => {
     if (customSelection) {
       console.warn(`unavailable prefix '${prefix}'`)
     }
   })
+
+  return dataset
 }
