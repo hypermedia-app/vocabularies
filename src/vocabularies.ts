@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 import { Readable } from 'stream'
-import type { DatasetCore, Stream } from '@rdfjs/types'
-import rdf from '@zazuko/env'
+import type { DatasetCore, DatasetCoreFactory, Stream } from '@rdfjs/types'
 import ParserN3 from '@rdfjs/parser-n3'
 import fromStream from 'rdf-dataset-ext/fromStream.js'
 import addAll from 'rdf-dataset-ext/addAll.js'
 import toStream from 'rdf-dataset-ext/toStream.js'
+import { Environment } from '@rdfjs/environment/Environment.js'
 import { loadDatasetStream } from './loadDataset/index.js'
 import prefixes from './prefixes.js'
 
@@ -13,7 +13,7 @@ export type Datasets = Partial<Record<keyof typeof prefixes, DatasetCore>>
 
 interface VocabulariesOptions {
   only?: (keyof typeof prefixes)[] | null
-  factory?: typeof rdf
+  factory: Environment<DatasetCoreFactory>
 }
 
 interface VocabulariesDatasetOptions extends VocabulariesOptions {
@@ -24,10 +24,10 @@ interface VocabulariesStreamOptions extends VocabulariesOptions {
   stream: true
 }
 
-export async function vocabularies (options?: VocabulariesDatasetOptions): Promise<Datasets>
+export async function vocabularies (options: VocabulariesDatasetOptions): Promise<Datasets>
 export async function vocabularies (options: VocabulariesStreamOptions): Promise<Stream & Readable>
-export async function vocabularies(options: VocabulariesDatasetOptions | VocabulariesStreamOptions = {}) {
-  const { only = null, factory = rdf, stream = false } = options
+export async function vocabularies(options: VocabulariesDatasetOptions | VocabulariesStreamOptions) {
+  const { only = null, factory, stream = false } = options
   let selectedPrefixes: (keyof typeof prefixes)[] = []
 
   if (!!only && Array.isArray(only)) {
@@ -67,7 +67,7 @@ export async function vocabularies(options: VocabulariesDatasetOptions | Vocabul
 
 interface LoadFileOptions {
   customSelection?: boolean
-  factory: typeof rdf
+  factory: Environment<DatasetCoreFactory>
 }
 
 export async function loadFile(prefix: keyof typeof prefixes, { customSelection, factory }: LoadFileOptions) {

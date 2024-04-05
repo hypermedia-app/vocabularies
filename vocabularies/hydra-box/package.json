@@ -9,7 +9,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@vocabulary/builder": "^1.0.3"
+    "@vocabulary/builder": "^1.0.7"
   },
   "vocabulary": {
     "prefix": "hydra-box",
