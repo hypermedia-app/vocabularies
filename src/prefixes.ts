@@ -1,4 +1,6 @@
-const prefixes = {
+import prefixes from '@zazuko/prefixes'
+
+const morePrefixes = {
   code: 'https://code.described.at/',
   'hydra-box': 'http://hydra-box.org/schema/',
   'hyper-auth': 'https://hypermedia.app/auth#',
@@ -9,7 +11,12 @@ const prefixes = {
   hex: 'https://w3id.org/hydra/extension#',
 }
 
-type LocalPrefixes = typeof prefixes
+Object.entries(morePrefixes)
+  .forEach(([prefix, namespace]) => {
+    prefixes[prefix] = namespace
+  })
+
+type LocalPrefixes = typeof morePrefixes
 
 declare module '@zazuko/prefixes/prefixes.js' {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
