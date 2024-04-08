@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 2.1.1
+
+### Patch Changes
+
+- 89aca40: Exporting all prefixes caused all to be added to `vocabularies`
+
 ## 2.1.0
 
 ### Minor Changes
