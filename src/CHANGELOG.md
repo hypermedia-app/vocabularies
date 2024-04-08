@@ -1,5 +1,11 @@
 # @hydrofoil/vocabularies
 
+## 2.1.0
+
+### Minor Changes
+
+- 439c2e8: Use `@zazuko/vocabulary-loader`
+
 ## 2.0.0
 
 ### Major Changes
